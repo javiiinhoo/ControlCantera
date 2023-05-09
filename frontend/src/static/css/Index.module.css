@@ -1,0 +1,132 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative
+}
+
+.container {
+    max-width: 960px;
+    margin: auto 0 auto auto
+}
+
+a {
+    color: #fff
+}
+
+a:hover {
+    text-decoration: none
+}
+
+nav {
+    background-color: #005ea4;
+    overflow: hidden;
+    font-size: 18px;
+    height: 60px
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center
+}
+
+nav ul li {
+    margin: 0 10px
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+    border-radius: 1px;
+    height: 100%;
+    display: flex;
+    align-items: center
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    background-color: #fff;
+    color: #0062cc;
+    text-decoration: none
+}
+
+.card-header:focus {
+    outline: 0
+}
+
+.collapse.show {
+    display: block
+}
+
+#accordionFooter {
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+
+.card {
+    width: fit-content;
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 1px 2px rgba(0, 0, 0, .05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column
+}
+
+.card-header {
+    flex: 1 1 33%;
+    min-width: 0;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    cursor: pointer
+}
+
+.card-header h3 {
+    margin-bottom: 0
+}
+
+.card-body {
+    padding: 1.25rem
+}
+
+.card-body p {
+    color: #005ea4;
+    font-size: 12pt
+}
+
+#headingDerechos {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px
+}
+
+@media only screen and (max-width:767px) {
+    .profile-photo {
+        max-width: 100%;
+        height: auto
+    }
+
+    .card-body {
+        font-size: 14px
+    }
+
+    .card {
+        width: auto;
+        margin: 0 10px
+    }
+}
